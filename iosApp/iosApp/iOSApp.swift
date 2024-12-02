@@ -1,7 +1,12 @@
 import SwiftUI
+import Firebase
 
 @main
-struct YralApp: App {
+struct IosApp: App {
+  init () {
+    FirebaseApp.configure()
+  }
+
 	var body: some Scene {
 		WindowGroup {
 			ContentView()
