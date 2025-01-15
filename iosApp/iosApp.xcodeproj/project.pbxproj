@@ -16,6 +16,8 @@
 		AC09A9FA2CDB7A5D009A39A4 /* SwiftBindings+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09A9F92CDB7A5D009A39A4 /* SwiftBindings+Extensions.swift */; };
 		AC09AA742CDD210D009A39A4 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC09AA732CDD2107009A39A4 /* Data+Extensions.swift */; };
 		AC0E49C42CEBA6F0002DC158 /* secp256k1 in Frameworks */ = {isa = PBXBuildFile; productRef = AC0E49C32CEBA6F0002DC158 /* secp256k1 */; };
+		AC12B9CD2D37BEFA004E9EA9 /* WebAuthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B9CC2D37BEE8004E9EA9 /* WebAuthSessionManager.swift */; };
+		AC12B9CE2D37BEFA004E9EA9 /* WebAuthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12B9CC2D37BEE8004E9EA9 /* WebAuthSessionManager.swift */; };
 		AC233D352D314CA3007040F1 /* Splash_Lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = AC233D342D314CA3007040F1 /* Splash_Lottie.json */; };
 		AC233D362D314CA3007040F1 /* Splash_Lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = AC233D342D314CA3007040F1 /* Splash_Lottie.json */; };
 		AC233D3A2D31529F007040F1 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = AC233D392D31529F007040F1 /* Collections */; };
@@ -234,6 +236,7 @@
 		AC09A9F92CDB7A5D009A39A4 /* SwiftBindings+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftBindings+Extensions.swift"; sourceTree = "<group>"; };
 		AC09AA0A2CDB7F2A009A39A4 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/Debug/iphoneos18.1/shared.framework"; sourceTree = "<group>"; };
 		AC09AA732CDD2107009A39A4 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		AC12B9CC2D37BEE8004E9EA9 /* WebAuthSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthSessionManager.swift; sourceTree = "<group>"; };
 		AC233D342D314CA3007040F1 /* Splash_Lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Splash_Lottie.json; sourceTree = "<group>"; };
 		AC233D372D314CC1007040F1 /* Splash_Lottie.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = Splash_Lottie.json; path = iosApp/Resources/Splash_Lottie.json; sourceTree = "<group>"; };
 		AC32E3F52D26FEB4001DDA43 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
@@ -508,6 +511,7 @@
 		AC32E4432D295EA0001DDA43 /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
+				AC12B9CC2D37BEE8004E9EA9 /* WebAuthSessionManager.swift */,
 				AC32E4402D295E92001DDA43 /* UserInfoView.swift */,
 			);
 			path = UserInfo;
@@ -1140,6 +1144,7 @@
 				ACB46A532D0ED22B002E200C /* FeedQuery.swift in Sources */,
 				AC32E4502D296628001DDA43 /* ProfileUseCase.swift in Sources */,
 				ACB46A2D2D0EC833002E200C /* AppDIContainer.swift in Sources */,
+				AC12B9CE2D37BEFA004E9EA9 /* WebAuthSessionManager.swift in Sources */,
 				AC32E3F72D26FEB9001DDA43 /* UIColor+Extensions.swift in Sources */,
 				ACC0F3972D2ED5D700FA5BD0 /* LottieView.swift in Sources */,
 				ACB46A7D2D105BEB002E200C /* UIKitInitializers.swift in Sources */,
@@ -1208,6 +1213,7 @@
 				ACB46A542D0ED22B002E200C /* FeedQuery.swift in Sources */,
 				AC32E44F2D296628001DDA43 /* ProfileUseCase.swift in Sources */,
 				ACB46A2C2D0EC833002E200C /* AppDIContainer.swift in Sources */,
+				AC12B9CD2D37BEFA004E9EA9 /* WebAuthSessionManager.swift in Sources */,
 				AC32E3F62D26FEB9001DDA43 /* UIColor+Extensions.swift in Sources */,
 				ACC0F3982D2ED5D700FA5BD0 /* LottieView.swift in Sources */,
 				ACB46A7C2D105BEB002E200C /* UIKitInitializers.swift in Sources */,

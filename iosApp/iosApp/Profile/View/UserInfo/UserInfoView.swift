@@ -10,6 +10,7 @@ import SwiftUI
 
 struct UserInfoView: View {
   @Binding var profileInfo: ProfileInfo?
+  private let webAuthManager = WebAuthSessionManager()
 
   var body: some View {
     VStack(spacing: Constants.verticalSpacing) {
@@ -27,7 +28,7 @@ struct UserInfoView: View {
       }
       .frame(maxWidth: .infinity, alignment: .leading)
       VStack(alignment: .leading, spacing: Constants.secondaryVStackSpacing) {
-        Button { }
+        Button { signInButtonTapped() }
         label: {
           Text(Constants.loginButtonTitle)
             .foregroundColor(Constants.loginButtonTextColor)
@@ -46,6 +47,37 @@ struct UserInfoView: View {
     }
     .padding([.horizontal], Constants.horizontalPadding)
     .background(Color.black.edgesIgnoringSafeArea(.all))
+  }
+
+  private func signInButtonTapped() {
+    let baseURL = URL(string: "https://hot-or-not-web-leptos-ssr-staging.fly.dev") ?? URL(fileURLWithPath: "")
+    let endpoint = Endpoint(http: "xyz", baseURL: baseURL, path: "api/google_auth_url", method: .get, queryItems: [
+      URLQueryItem(name: "client_redirect_uri", value: "yralmobile://")
+    ])
+
+    let httpService = HTTPService()
+    Task { @MainActor in
+      do {
+        let data = try await httpService.performRequest(for: endpoint, decodeAs: String.self)
+        guard let authURL = URL(string: data)
+        else {
+          print("Invalid Auth URL.")
+          return
+        }
+        let callbackScheme = "yralmobile"
+        webAuthManager.startAuthSession(authURL: authURL,
+                                        callbackScheme: callbackScheme) { result in
+          switch result {
+          case .failure(let error):
+            print("ASWebAuthenticationSession error: \(error.localizedDescription)")
+          case .success(let callbackURL):
+            break
+          }
+        }
+      } catch {
+        print(error)
+      }
+    }
   }
 }
 
