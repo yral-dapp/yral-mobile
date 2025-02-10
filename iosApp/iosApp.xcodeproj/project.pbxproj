@@ -125,6 +125,8 @@
 		AC8958E02D3EA60500E19ED7 /* FeedsViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8958DE2D3EA5FE00E19ED7 /* FeedsViewController+DataSource.swift */; };
 		AC8958E22D3EB0DB00E19ED7 /* ProfileOptionsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8958E12D3EB0D100E19ED7 /* ProfileOptionsWebView.swift */; };
 		AC8958E32D3EB0DB00E19ED7 /* ProfileOptionsWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8958E12D3EB0D100E19ED7 /* ProfileOptionsWebView.swift */; };
+		AC9B77EB2D5A6F3600270FC9 /* MediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B77EA2D5A6F3200270FC9 /* MediaPicker.swift */; };
+		AC9B77EC2D5A6F3600270FC9 /* MediaPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9B77EA2D5A6F3200270FC9 /* MediaPicker.swift */; };
 		ACB46A262D0EC0A3002E200C /* YralPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46A252D0EC09C002E200C /* YralPlayer.swift */; };
 		ACB46A272D0EC0A3002E200C /* YralPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46A252D0EC09C002E200C /* YralPlayer.swift */; };
 		ACB46A292D0EC76A002E200C /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB46A282D0EC765002E200C /* AppConfiguration.swift */; };
@@ -288,6 +290,7 @@
 		AC8958DB2D3EA54000E19ED7 /* FeedsViewController+Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedsViewController+Delegates.swift"; sourceTree = "<group>"; };
 		AC8958DE2D3EA5FE00E19ED7 /* FeedsViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FeedsViewController+DataSource.swift"; sourceTree = "<group>"; };
 		AC8958E12D3EB0D100E19ED7 /* ProfileOptionsWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsWebView.swift; sourceTree = "<group>"; };
+		AC9B77EA2D5A6F3200270FC9 /* MediaPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPicker.swift; sourceTree = "<group>"; };
 		ACB46A252D0EC09C002E200C /* YralPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YralPlayer.swift; sourceTree = "<group>"; };
 		ACB46A282D0EC765002E200C /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		ACB46A2B2D0EC82F002E200C /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
@@ -405,6 +408,7 @@
 				AC638BF72D230DA900481E94 /* HomeTabController */,
 				AC32E4292D27A412001DDA43 /* Profile */,
 				ACEBE9962D0C4AA50056F033 /* Feed */,
+				AC9B77E92D5A6F2300270FC9 /* Upload */,
 				AC6BECB92D09F0F0002E2021 /* Infrastructure */,
 				AC09AA1E2CDBB69B009A39A4 /* Extensions */,
 				ACC0F3992D2ED61100FA5BD0 /* Resources */,
@@ -681,6 +685,14 @@
 				AC8958D72D3EA46000E19ED7 /* FeedsViewController+ScrollView.swift */,
 			);
 			path = FeedsVC;
+			sourceTree = "<group>";
+		};
+		AC9B77E92D5A6F2300270FC9 /* Upload */ = {
+			isa = PBXGroup;
+			children = (
+				AC9B77EA2D5A6F3200270FC9 /* MediaPicker.swift */,
+			);
+			path = Upload;
 			sourceTree = "<group>";
 		};
 		ACB46A242D0EC083002E200C /* Video */ = {
@@ -1166,6 +1178,7 @@
 				2152FB042600AC8F00CF470E /* IosApp.swift in Sources */,
 				AC8958DF2D3EA60500E19ED7 /* FeedsViewController+DataSource.swift in Sources */,
 				AC09A9B22CDB775C009A39A4 /* yral-mobile-swift-binding.swift in Sources */,
+				AC9B77EC2D5A6F3600270FC9 /* MediaPicker.swift in Sources */,
 				AC8472AE2D1D9540004A4259 /* AVFoundation+Extensions.swift in Sources */,
 				AC32E4652D2991AD001DDA43 /* ProfileView.swift in Sources */,
 				AC4DECA92D3E06AC008EC8F5 /* FooterLoaderView.swift in Sources */,
@@ -1239,6 +1252,7 @@
 				ACD941872CFF575C0038FCB6 /* IosApp.swift in Sources */,
 				AC8958E02D3EA60500E19ED7 /* FeedsViewController+DataSource.swift in Sources */,
 				ACD941882CFF575C0038FCB6 /* yral-mobile-swift-binding.swift in Sources */,
+				AC9B77EB2D5A6F3600270FC9 /* MediaPicker.swift in Sources */,
 				AC8472AD2D1D9540004A4259 /* AVFoundation+Extensions.swift in Sources */,
 				AC32E4662D2991AD001DDA43 /* ProfileView.swift in Sources */,
 				AC4DECAA2D3E06AC008EC8F5 /* FooterLoaderView.swift in Sources */,
